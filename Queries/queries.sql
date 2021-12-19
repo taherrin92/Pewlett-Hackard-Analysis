@@ -7,7 +7,6 @@ FROM employees as e
 LEFT JOIN dept_emp as de ON e.emp_no = de.emp_no
 LEFT JOIN titles as t ON e.emp_no = t.emp_no;
 
-DROP TABLE retirement_info;
 
 SELECT emp_no,first_name,last_name
 INTO retirement_info
@@ -33,7 +32,6 @@ SELECT ri.emp_no,
 FROM retirement_info as ri
 LEFT JOIN dept_emp as de ON ri.emp_no = de.emp_no;
 
-DROP TABLE IF EXISTS current_emp;
 SELECT ri.emp_no,
 	ri.first_name,
 	ri.last_name,
@@ -52,7 +50,6 @@ on ce.emp_no = de.emp_no
 GROUP BY de.dept_no
 ORDER BY de.dept_no;
 
-DROP TABLE IF EXISTS emp_info;
 SELECT e.emp_no,e.first_name,e.last_name, e.gender,s.salary, de.to_date
 INTO emp_info
 FROM employees as e

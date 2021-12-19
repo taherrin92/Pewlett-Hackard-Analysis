@@ -20,12 +20,14 @@
 - `SELECT COUNT(emp_no) FROM unique_titles` counts 90,398 openings will need to be filled.
 
 - As mentioned in the 4th bullet of results, the birth date filter `WHERE ... (e.birth_date BETWEEN '1965-01-01'AND'1965-12-31')` is only set for 1965. There are only 1549 employees that fall in the age criteria for mentorship. Which is not enough to train for 90,000 openings.
-- If the filter is expanded between 1962 and 1965, then 56,859 people become eligible. If it is expanded to start in 1960 then 93756 become eligible, but the number of Senior Engineer mentors is still only 9374 compared to the 30000 senior engineer openings seen here: ![mentors_to_openings]()
+- If the filter is expanded between 1962 and 1965, then 56,859 people become eligible. If it is expanded to start in 1960 then 93756 become eligible, but the number of Senior Engineer mentors is still only 9374 compared to the 30000 senior engineer openings seen here: ![mentors_to_openings](https://github.com/taherrin92/Pewlett-Hackard-Analysis/blob/main/Queries/Data/Challenge_Data/total_openings_to_mentors_1960.png)
+
+
 
 
 - The search could be further refined by breaking down and comparing positions leaving each department to the number of mentors available in that position for a more accurate distribution.
 
-  - Interesting side note, in the image shown here: ![employees_by_age]()
+  - Interesting side note, in the image shown here: ![employees_by_age](https://github.com/taherrin92/Pewlett-Hackard-Analysis/blob/main/Queries/Data/Challenge_Data/employees_by_year.png)
 
 
   - This group by query counts the employee number for each birth year, the emp_no doesn't even have to be unique to show that the youngest hire was born in 1962. The company needs to hire much younger employees before every single employees retires in a decade.

@@ -2,7 +2,7 @@
 
 ## Overview
 - Management wanted two reports describing the company's upcoming retiring employees for a mentorship-eligibility proposal.
-  -For the first report, we created three different retirement titles tables. We inner joined the titles and employee tables on the employee number and filtered the birth dates within the retirement range. The second table only contained unique employee numbers to show where which department they were retiring from. The third totaled up the number the employees about to retire from each department.
+  - For the first report, we created three different retirement titles tables. We inner joined the titles and employee tables on the employee number and filtered the birth dates within the retirement range. The second table only contained unique employee numbers to show where which department they were retiring from. The third totaled up the number the employees about to retire from each department.
   - The second report inner joined three tables, listing unique employee numbers of candidates for the mentorship-eligibility program who are expected to retire in the next ten years.
 
 ## Results
@@ -30,4 +30,4 @@
   - Interesting side note, in the image shown here: ![employees_by_age](https://github.com/taherrin92/Pewlett-Hackard-Analysis/blob/main/Queries/Data/Challenge_Data/employees_by_year.png)
 
 
-  - This group by query counts the employee number for each birth year, the emp_no doesn't even have to be unique to show that the youngest hire was born in 1962. The company needs to hire much younger employees before every single employees retires in a decade.
+  - This group by query counts the employee number for each birth year, the emp_no doesn't even have to be unique to show that the youngest hire was born in 1962. The company needs to hire much younger employees before every employee retires in a decade.

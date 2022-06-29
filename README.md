@@ -30,4 +30,4 @@
   - Interesting side note: ![employees_by_age](https://github.com/taherrin92/Pewlett-Hackard-Analysis/blob/main/Queries/Data/Challenge_Data/employees_by_year.png)
 
 
-  - In the image above, this group by query counts the employee number for each birth year, the emp_no doesn't even have to be unique to show that the youngest hire was born in 1962. The company needs to hire much younger employees before every employee retires in a decade.
+  - In the image above, this group by query counts the employee number for each birth year, the emp_no doesn't even have to be unique to show that the youngest hire was born in 1962. The company needs to hire much younger employees before everyone retires in a decade.
